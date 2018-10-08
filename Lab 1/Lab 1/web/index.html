@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Lab1</title>
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="centerDiv">
+        <form action="Login" method="post">
+            <input type="text" name="key" placeholder="Capital" onsubmit="return validateForm()"><br>
+            <input type="text" name="value" placeholder="Country" onsubmit="return validateForm()"><br>
+            <input type="submit" value="SEND">
+        </form>
+    </div>
+</body>
+</html>
